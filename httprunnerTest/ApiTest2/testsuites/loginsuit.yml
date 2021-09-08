@@ -1,0 +1,19 @@
+config:
+    name: "登录接口套件"
+
+testcases:
+-
+    name: "登录接口套件"
+    testcase: testcases/login.yml
+    parameters:
+      title-username-password-status_code-contain_msg:
+        - [ "正常登录", "keyou1", "123456", 200, "token" ]
+        - [ "密码错误", "keyou1", "123457", 400, "non_field_errors" ]
+        - [ "账号错误", "keyou111", "123456", 400, "non_field_errors" ]
+        - [ "用户名为空", "", "123456", 400, "username" ]
+        - [ "密码为空", "keyou1", "", 200, "password" ]
+#      - title: [ "正常登录", "密码错误", "账号错误", "用户名为空", "密码为空" ]
+#      - username: [ "keyou1", "keyou1", "keyou111", "", "keyou1" ]
+#      - password: [ "123456", "123457", "123456", "123456", "" ]
+#      - status_code: [ 200, 400, 400, 400, 200 ]
+#      - contain_msg: [ "token", "non_field_errors", "non_field_errors", "username", "password" ]

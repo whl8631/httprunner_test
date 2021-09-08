@@ -1,0 +1,16 @@
+
+name: 登录测试
+variables:
+    username: keyou1
+    password: 123456
+base_url: http://api.keyou.site:8000
+request:
+    url: /user/login/
+    method: POST
+    headers:
+        Content-Type: "application/json"
+    json:
+        username: $username
+        password: $password
+validate:
+    - eq: ["status_code", 200]

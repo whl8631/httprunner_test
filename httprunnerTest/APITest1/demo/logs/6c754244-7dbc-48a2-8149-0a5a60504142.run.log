@@ -1,0 +1,281 @@
+2021-08-02 17:07:57.523 | INFO     | httprunner.runner:test_start:450 - Start to run testcase: request methods testcase: reference testcase, TestCase ID: 6c754244-7dbc-48a2-8149-0a5a60504142
+2021-08-02 17:07:57.524 | INFO     | httprunner.runner:__run_step:292 - run step begin: request with functions >>>>>>
+2021-08-02 17:07:57.525 | INFO     | httprunner.runner:__run_step:292 - run step begin: get with params >>>>>>
+2021-08-02 17:07:59.069 | WARNING  | httprunner.client:request:188 - failed to get client address info: 'WrappedSocket' object has no attribute 'getsockname'
+2021-08-02 17:07:59.070 | WARNING  | httprunner.client:request:196 - failed to get server address info: 'WrappedSocket' object has no attribute 'getpeername'
+2021-08-02 17:07:59.070 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : https://postman-echo.com/get?foo1=bar11&foo2=bar21&sum_v=3
+headers  : {
+    "User-Agent": "HttpRunner/3.1.6",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "HRUN-Request-ID": "HRUN-6c754244-7dbc-48a2-8149-0a5a60504142-277525"
+}
+cookies  : {}
+body     : None
+
+2021-08-02 17:07:59.071 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Mon, 02 Aug 2021 09:07:59 GMT",
+    "Content-Type": "application/json; charset=utf-8",
+    "Content-Length": "421",
+    "Connection": "keep-alive",
+    "ETag": "W/\"1a5-buACp8IJO54QvzqdWxRT3l35VUU\"",
+    "Vary": "Accept-Encoding",
+    "set-cookie": "sails.sid=s%3A_wHovAxK4Nq1yeF8632EYtHppE9Nfyr-.duNIW%2BC6KSEBtHe6gJMKHI3Wf9MKWQJ%2FS%2BooZZF6o24; Path=/; HttpOnly"
+}
+cookies  : {
+    "sails.sid": "s%3A_wHovAxK4Nq1yeF8632EYtHppE9Nfyr-.duNIW%2BC6KSEBtHe6gJMKHI3Wf9MKWQJ%2FS%2BooZZF6o24"
+}
+encoding : utf-8
+content_type : application/json; charset=utf-8
+body     : {
+    "args": {
+        "foo1": "bar11",
+        "foo2": "bar21",
+        "sum_v": "3"
+    },
+    "headers": {
+        "x-forwarded-proto": "https",
+        "x-forwarded-port": "443",
+        "host": "postman-echo.com",
+        "x-amzn-trace-id": "Root=1-6107b5ef-223175c950677d841d3d7cf3",
+        "user-agent": "HttpRunner/3.1.6",
+        "accept-encoding": "gzip, deflate",
+        "accept": "*/*",
+        "hrun-request-id": "HRUN-6c754244-7dbc-48a2-8149-0a5a60504142-277525"
+    },
+    "url": "https://postman-echo.com/get?foo1=bar11&foo2=bar21&sum_v=3"
+}
+
+2021-08-02 17:07:59.071 | INFO     | httprunner.client:request:217 - status_code: 200, response_time(ms): 1544.06 ms, response_length: 0 bytes
+2021-08-02 17:07:59.072 | INFO     | httprunner.response:extract:179 - extract mapping: {'foo3': 'bar21'}
+2021-08-02 17:07:59.072 | INFO     | httprunner.response:validate:249 - assert status_code equal 200(int)	==> pass
+2021-08-02 17:07:59.072 | INFO     | httprunner.response:validate:249 - assert body.args.foo1 equal bar11(str)	==> pass
+2021-08-02 17:07:59.072 | INFO     | httprunner.response:validate:249 - assert body.args.sum_v equal 3(str)	==> pass
+2021-08-02 17:07:59.073 | INFO     | httprunner.response:validate:249 - assert body.args.foo2 equal bar21(str)	==> pass
+2021-08-02 17:07:59.073 | INFO     | httprunner.runner:__run_step:304 - run step end: get with params <<<<<<
+
+2021-08-02 17:07:59.073 | INFO     | httprunner.runner:__run_step:292 - run step begin: post raw text >>>>>>
+2021-08-02 17:07:59.320 | WARNING  | httprunner.client:request:188 - failed to get client address info: 'WrappedSocket' object has no attribute 'getsockname'
+2021-08-02 17:07:59.321 | WARNING  | httprunner.client:request:196 - failed to get server address info: 'WrappedSocket' object has no attribute 'getpeername'
+2021-08-02 17:07:59.321 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : https://postman-echo.com/post
+headers  : {
+    "User-Agent": "HttpRunner/3.1.6",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Content-Type": "text/plain",
+    "HRUN-Request-ID": "HRUN-6c754244-7dbc-48a2-8149-0a5a60504142-279073",
+    "Cookie": "sails.sid=s%3A_wHovAxK4Nq1yeF8632EYtHppE9Nfyr-.duNIW%2BC6KSEBtHe6gJMKHI3Wf9MKWQJ%2FS%2BooZZF6o24",
+    "Content-Length": "83"
+}
+cookies  : {
+    "sails.sid": "s%3A_wHovAxK4Nq1yeF8632EYtHppE9Nfyr-.duNIW%2BC6KSEBtHe6gJMKHI3Wf9MKWQJ%2FS%2BooZZF6o24"
+}
+body     : This is expected to be sent back as part of response body: bar12-config_bar2-bar32.
+
+2021-08-02 17:07:59.322 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Mon, 02 Aug 2021 09:07:59 GMT",
+    "Content-Type": "application/json; charset=utf-8",
+    "Content-Length": "635",
+    "Connection": "keep-alive",
+    "ETag": "W/\"27b-ry2Jip8nGbs/L3W3urrtUyvz3MU\"",
+    "Vary": "Accept-Encoding",
+    "set-cookie": "sails.sid=s%3ApJEXyrP5vmty8OT3znP0YSwYbT1tWzfE.vDjKZXXMVMkOR1cTze1Oh9Fua6ttMg2nPinyE5DW8tk; Path=/; HttpOnly"
+}
+cookies  : {
+    "sails.sid": "s%3ApJEXyrP5vmty8OT3znP0YSwYbT1tWzfE.vDjKZXXMVMkOR1cTze1Oh9Fua6ttMg2nPinyE5DW8tk"
+}
+encoding : utf-8
+content_type : application/json; charset=utf-8
+body     : {
+    "args": {},
+    "data": "This is expected to be sent back as part of response body: bar12-config_bar2-bar32.",
+    "files": {},
+    "form": {},
+    "headers": {
+        "x-forwarded-proto": "https",
+        "x-forwarded-port": "443",
+        "host": "postman-echo.com",
+        "x-amzn-trace-id": "Root=1-6107b5ef-7d6b58042734d443798ea2ab",
+        "content-length": "83",
+        "user-agent": "HttpRunner/3.1.6",
+        "accept-encoding": "gzip, deflate",
+        "accept": "*/*",
+        "content-type": "text/plain",
+        "hrun-request-id": "HRUN-6c754244-7dbc-48a2-8149-0a5a60504142-279073",
+        "cookie": "sails.sid=s%3A_wHovAxK4Nq1yeF8632EYtHppE9Nfyr-.duNIW%2BC6KSEBtHe6gJMKHI3Wf9MKWQJ%2FS%2BooZZF6o24"
+    },
+    "json": null,
+    "url": "https://postman-echo.com/post"
+}
+
+2021-08-02 17:07:59.322 | INFO     | httprunner.client:request:217 - status_code: 200, response_time(ms): 246.78 ms, response_length: 0 bytes
+2021-08-02 17:07:59.322 | INFO     | httprunner.response:validate:249 - assert status_code equal 200(int)	==> pass
+2021-08-02 17:07:59.322 | INFO     | httprunner.response:validate:249 - assert body.data equal This is expected to be sent back as part of response body: bar12-config_bar2-bar32.(str)	==> pass
+2021-08-02 17:07:59.323 | INFO     | httprunner.runner:__run_step:304 - run step end: post raw text <<<<<<
+
+2021-08-02 17:07:59.323 | INFO     | httprunner.runner:__run_step:292 - run step begin: post form data >>>>>>
+2021-08-02 17:07:59.558 | WARNING  | httprunner.client:request:188 - failed to get client address info: 'WrappedSocket' object has no attribute 'getsockname'
+2021-08-02 17:07:59.559 | WARNING  | httprunner.client:request:196 - failed to get server address info: 'WrappedSocket' object has no attribute 'getpeername'
+2021-08-02 17:07:59.559 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : https://postman-echo.com/post
+headers  : {
+    "User-Agent": "HttpRunner/3.1.6",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Content-Type": "application/x-www-form-urlencoded",
+    "HRUN-Request-ID": "HRUN-6c754244-7dbc-48a2-8149-0a5a60504142-279323",
+    "Cookie": "sails.sid=s%3ApJEXyrP5vmty8OT3znP0YSwYbT1tWzfE.vDjKZXXMVMkOR1cTze1Oh9Fua6ttMg2nPinyE5DW8tk",
+    "Content-Length": "44"
+}
+cookies  : {
+    "sails.sid": "s%3ApJEXyrP5vmty8OT3znP0YSwYbT1tWzfE.vDjKZXXMVMkOR1cTze1Oh9Fua6ttMg2nPinyE5DW8tk"
+}
+body     : foo1=testcase_ref_bar1&foo2=bar23&foo3=bar21
+
+2021-08-02 17:07:59.560 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Mon, 02 Aug 2021 09:07:59 GMT",
+    "Content-Type": "application/json; charset=utf-8",
+    "Content-Length": "679",
+    "Connection": "keep-alive",
+    "ETag": "W/\"2a7-nnRC5ewZs6+4/erL7yzm9P6oms0\"",
+    "Vary": "Accept-Encoding",
+    "set-cookie": "sails.sid=s%3ArAEQSlreejWRosmVGZV-PNOTdhaNch98.nipY4QoyO9pN4U9VrrvT4EMPXZ%2BfLBCEjWko7p7CHQA; Path=/; HttpOnly"
+}
+cookies  : {
+    "sails.sid": "s%3ArAEQSlreejWRosmVGZV-PNOTdhaNch98.nipY4QoyO9pN4U9VrrvT4EMPXZ%2BfLBCEjWko7p7CHQA"
+}
+encoding : utf-8
+content_type : application/json; charset=utf-8
+body     : {
+    "args": {},
+    "data": "",
+    "files": {},
+    "form": {
+        "foo1": "testcase_ref_bar1",
+        "foo2": "bar23",
+        "foo3": "bar21"
+    },
+    "headers": {
+        "x-forwarded-proto": "https",
+        "x-forwarded-port": "443",
+        "host": "postman-echo.com",
+        "x-amzn-trace-id": "Root=1-6107b5ef-5f286d3e079566436c4ed2dd",
+        "content-length": "44",
+        "user-agent": "HttpRunner/3.1.6",
+        "accept-encoding": "gzip, deflate",
+        "accept": "*/*",
+        "content-type": "application/x-www-form-urlencoded",
+        "hrun-request-id": "HRUN-6c754244-7dbc-48a2-8149-0a5a60504142-279323",
+        "cookie": "sails.sid=s%3ApJEXyrP5vmty8OT3znP0YSwYbT1tWzfE.vDjKZXXMVMkOR1cTze1Oh9Fua6ttMg2nPinyE5DW8tk"
+    },
+    "json": {
+        "foo1": "testcase_ref_bar1",
+        "foo2": "bar23",
+        "foo3": "bar21"
+    },
+    "url": "https://postman-echo.com/post"
+}
+
+2021-08-02 17:07:59.560 | INFO     | httprunner.client:request:217 - status_code: 200, response_time(ms): 234.91 ms, response_length: 0 bytes
+2021-08-02 17:07:59.560 | INFO     | httprunner.response:validate:249 - assert status_code equal 200(int)	==> pass
+2021-08-02 17:07:59.561 | INFO     | httprunner.response:validate:249 - assert body.form.foo1 equal testcase_ref_bar1(str)	==> pass
+2021-08-02 17:07:59.561 | INFO     | httprunner.response:validate:249 - assert body.form.foo2 equal bar23(str)	==> pass
+2021-08-02 17:07:59.561 | INFO     | httprunner.response:validate:249 - assert body.form.foo3 equal bar21(str)	==> pass
+2021-08-02 17:07:59.561 | INFO     | httprunner.runner:__run_step:304 - run step end: post form data <<<<<<
+
+2021-08-02 17:07:59.562 | INFO     | httprunner.runner:__run_step_testcase:286 - export variables: {'foo3': 'bar21'}
+2021-08-02 17:07:59.562 | INFO     | httprunner.runner:__run_step:304 - run step end: request with functions <<<<<<
+
+2021-08-02 17:07:59.562 | INFO     | httprunner.runner:__run_step:292 - run step begin: post form data >>>>>>
+2021-08-02 17:07:59.846 | WARNING  | httprunner.client:request:188 - failed to get client address info: 'WrappedSocket' object has no attribute 'getsockname'
+2021-08-02 17:07:59.846 | WARNING  | httprunner.client:request:196 - failed to get server address info: 'WrappedSocket' object has no attribute 'getpeername'
+2021-08-02 17:07:59.847 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : https://postman-echo.com/post
+headers  : {
+    "User-Agent": "HttpRunner/3.1.6",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Content-Type": "application/x-www-form-urlencoded",
+    "HRUN-Request-ID": "HRUN-6c754244-7dbc-48a2-8149-0a5a60504142-279562",
+    "Cookie": "sails.sid=s%3ArAEQSlreejWRosmVGZV-PNOTdhaNch98.nipY4QoyO9pN4U9VrrvT4EMPXZ%2BfLBCEjWko7p7CHQA",
+    "Content-Length": "20"
+}
+cookies  : {
+    "sails.sid": "s%3ArAEQSlreejWRosmVGZV-PNOTdhaNch98.nipY4QoyO9pN4U9VrrvT4EMPXZ%2BfLBCEjWko7p7CHQA"
+}
+body     : foo1=bar1&foo2=bar21
+
+2021-08-02 17:07:59.847 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Mon, 02 Aug 2021 09:07:59 GMT",
+    "Content-Type": "application/json; charset=utf-8",
+    "Content-Length": "625",
+    "Connection": "keep-alive",
+    "ETag": "W/\"271-hY6bzxyHjQAJ5mRaBKjx6Gn9U3o\"",
+    "Vary": "Accept-Encoding",
+    "set-cookie": "sails.sid=s%3AEE-5n0h06nGOitC6-TFV9-XcWH0cNFbr.OtuGPWpg1IVXARKWfqIntZEgaIdEVhVCn0KgUGMv9jw; Path=/; HttpOnly"
+}
+cookies  : {
+    "sails.sid": "s%3AEE-5n0h06nGOitC6-TFV9-XcWH0cNFbr.OtuGPWpg1IVXARKWfqIntZEgaIdEVhVCn0KgUGMv9jw"
+}
+encoding : utf-8
+content_type : application/json; charset=utf-8
+body     : {
+    "args": {},
+    "data": "",
+    "files": {},
+    "form": {
+        "foo1": "bar1",
+        "foo2": "bar21"
+    },
+    "headers": {
+        "x-forwarded-proto": "https",
+        "x-forwarded-port": "443",
+        "host": "postman-echo.com",
+        "x-amzn-trace-id": "Root=1-6107b5ef-1258a1ce732f7e742799c243",
+        "content-length": "20",
+        "user-agent": "HttpRunner/3.1.6",
+        "accept-encoding": "gzip, deflate",
+        "accept": "*/*",
+        "content-type": "application/x-www-form-urlencoded",
+        "hrun-request-id": "HRUN-6c754244-7dbc-48a2-8149-0a5a60504142-279562",
+        "cookie": "sails.sid=s%3ArAEQSlreejWRosmVGZV-PNOTdhaNch98.nipY4QoyO9pN4U9VrrvT4EMPXZ%2BfLBCEjWko7p7CHQA"
+    },
+    "json": {
+        "foo1": "bar1",
+        "foo2": "bar21"
+    },
+    "url": "https://postman-echo.com/post"
+}
+
+2021-08-02 17:07:59.847 | INFO     | httprunner.client:request:217 - status_code: 200, response_time(ms): 283.37 ms, response_length: 0 bytes
+2021-08-02 17:07:59.848 | INFO     | httprunner.response:validate:249 - assert status_code equal 200(int)	==> pass
+2021-08-02 17:07:59.848 | INFO     | httprunner.response:validate:249 - assert body.form.foo1 equal bar1(str)	==> pass
+2021-08-02 17:07:59.848 | INFO     | httprunner.response:validate:249 - assert body.form.foo2 equal bar21(str)	==> pass
+2021-08-02 17:07:59.848 | INFO     | httprunner.runner:__run_step:304 - run step end: post form data <<<<<<
+

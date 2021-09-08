@@ -1,0 +1,9 @@
+{
+    "testcase":[
+        "testcases/login.yml",
+        "testcases/login.yml",
+        "testcases/login.yml",
+        "testcases/login.yml",
+        "testcases/login.yml"
+    ]
+}

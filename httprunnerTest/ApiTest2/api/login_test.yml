@@ -1,0 +1,18 @@
+name: test login demo
+base_url: 'http://api.keyou.site:8000'
+variables:
+    name: ${ENV(USERNAME)}
+    password: ${ENV(PASSWORD)}
+request:
+    url: '/user/login/'
+    method: POST
+    headers:
+        Content-Type: "application/json"
+    json:
+        username: ${name}
+        password: ${password}
+#    json:
+#        username: ${ENV(USERNAME)}
+#        password: ${ENV(PASSWORD)}
+validate:
+    - eq: ["status_code", 200 ]
